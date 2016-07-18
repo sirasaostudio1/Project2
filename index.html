@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="genScript.js"></script>
+  <script src="jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="myStyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+            <!--<script src="myJs.js"></script>-->
+
+
+<div class="container">
+  <center><h2>SequencEnG-Dev</h2></center>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">Automated Software Decision Support System for ChIP-seq</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item"><button onclick="myFunction()">Peak Calling</button></li>
+          <li class="list-group-item"><button onclick="myFunction1()">Differential Binding</button></li>
+          <li class="list-group-item"><button onclick="myFunction2()">Motif Analysis</button></li>
+          <li class="list-group-item"><button onclick="myFunction3()">Peak Anotation</button></li>
+          <li class="list-group-item"><button onclick="myFunction4()">Gene Ontology Analysis</button></li>
+        </ul>
+        <!--<div class="panel-footer">Footer</div>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<center><img id="myImg" src="draw/blank.png" width="812" height="424"></center>
+
+
+
+
+<!-----------------------------------------------------TABLES BELOW-------------------------------------------------->
+
+
+
+
+<!-----------------------------------------------------PEAK CALLING-------------------------------------------------->
+<body>
+<center><h2>Software Recommendations</h2></center>
+<div class="container">
+ <div id="div1"  style="display:none;" class="answer_list" >                                                 <!--<div style="overflow-x:auto;">-->
+  <table>
+    <tr>
+      <th>Pipeline Step</th>
+      <th>Recommended Software</th>
+    </tr>
+    <tr>
+      <td>Quality Control of Reads</td>
+      <td>FastQC</td>
+    </tr>
+     <tr>
+      <td>Read Mapping</td>
+      <td>BWA, Bowtie, Bowtie2</td>
+    </tr>
+    <tr>
+      <td>Quality Control of Read Counts After Mapping  </td>
+      <td>CHANCE</td>
+    </tr>
+    <tr>
+      <td>Peak Calling</td>
+      <td>MACS</td>
+    </tr>
+    <tr>
+      <td>Motif Analysis</td>
+      <td>CisGenome, MEME-ChIP</td>
+    </tr>
+     <tr>
+      <td>Peak Annotation </td>
+      <td>ChIPpeakAnno</td>
+    </tr>
+  </div>
+  </table>
+</div><onclick="myFunctionA()"/>
+</body>
+ 
+ <!-----------------------------------------------------Diff-------------------------------------------------->
+<body>
+ <div id="div2" style="display:none;" class="answer_list" >                                     
+  <table>
+    <tr>
+      <th>Pipeline Step</th>
+      <th>Recommended Software</th>
+    </tr>
+    <tr>
+      <td>Quality Control of Reads</td>
+      <td>FastQC</td>
+    </tr>
+     <tr>
+      <td>Read Mapping</td>
+      <td>BWA, Bowtie, Bowtie2</td>
+    </tr>
+    <tr>
+      <td>Quality Control of Read Counts After Mapping  </td>
+      <td>CHANCE</td>
+    </tr>
+    <tr>
+      <td>Peak Calling</td>
+      <td>MACS</td>
+    </tr>
+    <tr>
+      <td>Differential Binding</td>
+      <td>ChIPDiff, Manorm</td>
+    </tr>
+  </table>
+</div><onclick="myFunction1A()"/>
+</body>
+
+<!-----------------------------------------------------Motif Ana-------------------------------------------------->
+<body>
+ <div id="div3" style="display:none;" class="answer_list" >                                     
+  <table>
+    <tr>
+      <th>Pipeline Step</th>
+      <th>Recommended Software</th>
+    </tr>
+    <tr>
+      <td>Quality Control of Reads</td>
+      <td>FastQC</td>
+    </tr>
+     <tr>
+      <td>Read Mapping</td>
+      <td>BWA, Bowtie, Bowtie2</td>
+    </tr>
+    <tr>
+      <td>Quality Control of Read Counts After Mapping  </td>
+      <td>CHANCE</td>
+    </tr>
+    <tr>
+      <td>Peak Calling</td>
+      <td>MACS</td>
+    </tr>
+    <tr>
+      <td>Motif Analysis</td>
+      <td>CisGenome, MEME-ChIP</td>
+    </tr>
+  </table>
+</div><onclick="myFunction2A()"/>
+</body>
+
+<!-----------------------------------------------------Peak Anno-------------------------------------------------->
+<body>
+ <div id="div4" style="display:none;" class="answer_list" >                                     
+  <table>
+    <tr>
+      <th>Pipeline Step</th>
+      <th>Recommended Software</th>
+    </tr>
+    <tr>
+      <td>Quality Control of Reads</td>
+      <td>FastQC</td>
+    </tr>
+     <tr>
+      <td>Read Mapping</td>
+      <td>BWA, Bowtie, Bowtie2</td>
+    </tr>
+    <tr>
+      <td>Quality Control of Read Counts After Mapping  </td>
+      <td>CHANCE</td>
+    </tr>
+    <tr>
+      <td>Peak Calling</td>
+      <td>MACS</td>
+    </tr>
+    <tr>
+      <td>Peak Annotation</td>
+      <td>ChIPpeakAnno</td>
+    </tr>
+  </table>
+</div><onclick="myFunction3A()"/>
+</body>
+
+<!-----------------------------------------------------Peak Anno-------------------------------------------------->
+<body>
+ <div id="div5" style="display:none;" class="answer_list" >                                     
+  <table>
+    <tr>
+      <th>Pipeline Step</th>
+      <th>Recommended Software</th>
+    </tr>
+    <tr>
+      <td>Quality Control of Reads</td>
+      <td>FastQC</td>
+    </tr>
+     <tr>
+      <td>Read Mapping</td>
+      <td>BWA, Bowtie, Bowtie2</td>
+    </tr>
+    <tr>
+      <td>Quality Control of Read Counts After Mapping  </td>
+      <td>CHANCE</td>
+    </tr>
+    <tr>
+      <td>Peak Calling</td>
+      <td>MACS</td>
+    </tr>
+    <tr>
+      <td>Gene Ontology Analysis</td>
+      <td>David</td>
+    </tr>
+    <tr>
+      <td>Gene Annotation</td>
+      <td>Tbd</td>
+    </tr>
+  </table>
+</div><onclick="myFunction4A()"/>
+</body>
